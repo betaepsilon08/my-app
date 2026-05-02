@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neon Holdout</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hud" aria-label="Game status">
+        <div>
+          <span class="label">LEVEL</span>
+          <strong id="level">1</strong>
+        </div>
+        <div>
+          <span class="label">HP</span>
+          <strong id="hp">100</strong>
+        </div>
+        <div>
+          <span class="label">SCORE</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span class="label">WEAPON</span>
+          <strong id="weapon">Pulse</strong>
+        </div>
+      </section>
+
+      <section class="game-wrap">
+        <canvas id="game" width="960" height="600" aria-label="Neon Holdout game arena"></canvas>
+        <div id="overlay" class="overlay">
+          <div class="panel">
+            <h1>NEON HOLDOUT</h1>
+            <p>Move with WASD or arrow keys. Aim with the mouse. Your weapon fires automatically.</p>
+            <button id="startBtn" type="button">START RUN</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="loadout" aria-label="Weapon upgrades">
+        <div>
+          <span class="label">FIRE RATE</span>
+          <div id="rateBar" class="bar"><span></span></div>
+        </div>
+        <div>
+          <span class="label">DAMAGE</span>
+          <div id="damageBar" class="bar"><span></span></div>
+        </div>
+        <div>
+          <span class="label">SPREAD</span>
+          <div id="spreadBar" class="bar"><span></span></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
